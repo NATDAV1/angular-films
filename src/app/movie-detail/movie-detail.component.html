@@ -1,7 +1,7 @@
-<h3  *ngIf="!movieData">no data yet</h3>
+<h3  *ngIf="!movieData">No Data Yet</h3>
 <div class="movieDetail" *ngIf="movieData"   [style.background-image]=" 'url(https://image.tmdb.org/t/p/original' + movieData.backdrop_path + ')' ">
     <div>
-      <div class="generos">
+      <div class="genres">
         <span *ngFor="let genre of movieData.genres" >{{genre.name}}</span>
       </div>
       <h1>{{movieData.title}}</h1>
