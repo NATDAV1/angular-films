@@ -1,0 +1,29 @@
+:host {
+    background:#af68f2;
+    color: white;
+    .movieDetail {
+        background-size:cover;
+        padding: 1em;
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax (200px, 1fr));
+        grid-gap: 1em;
+.rating {
+    font-size: 3em;
+    font-weight: 400;
+}
+        img {
+            width: 100%;
+
+            .genres span {
+                margin-right: 0 0.6em;
+                margin-top: 0.5em;
+                box-sizing: content-box;
+                background: #333;
+                display: inline-block;
+                text-transform: uppercase;
+                padding: 0.5em;
+                border-radius: 5px;
+            }
+        }
+    }
+}
