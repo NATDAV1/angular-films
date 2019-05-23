@@ -32,4 +32,8 @@ export class ApiMoviesService {
     let url = this.endpointSimilar(id);
     return this.http.get(url);
   }
+  searchMovies(query) {
+    let url = `${this.apiBaseUrl}search/movie?api_key=${this.apiKey}&query=${query}&language=en-US`;
+    return this.http.get(url);
+  }
 }
