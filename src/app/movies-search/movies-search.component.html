@@ -1,0 +1,8 @@
+<div class="moviesSearch">
+
+  <input type="text" [(ngModel)]="query" (keyup.enter)="search()" placeholder="search">
+
+  <app-movies-display [moviesArray]="moviesFound"></app-movies-display>
+
+
+</div>
